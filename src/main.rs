@@ -1,8 +1,9 @@
-mod modstuff;
+//mod modstuff;
+//mod tasks;
+mod serialstuff;
 
 fn main() {
-    modstuff::testmod::all_test();
-    let running = true;
+    //modstuff::testmod::all_test();
     /*
     let mut inp1 = String::new();
     let mut inp2 = String::new();
@@ -31,8 +32,8 @@ fn main() {
         println!("Result: {}", result);
         println!("");
     } */
-   let mut entity_manager = modstuff::entity::EntityManager::new();
-   while running {
+   //let mut entity_manager = modstuff::entity::EntityManager::new();
+    /*
     let mut input_name = String::new();
     let mut input_id = String::new();
 
@@ -48,6 +49,10 @@ fn main() {
     entity.print();
     println!("Hello!: {}", entity.name);
     
+     */
     
-   }
+    //tasks::run();
+
+    serialstuff::run();
+    print!("Goodbye!");
 }
